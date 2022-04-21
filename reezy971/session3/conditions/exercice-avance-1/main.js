@@ -16,8 +16,11 @@ function selectChange() {
   // Instructions:
   // Écrire le code pour changer la couleur de fond du body en fonction de
   // la valeur qu'a choisi l'utilisateur, en utilisant des conditions (if)
+if(document.body.style.backgroundColor = '...'){
+  else{
 
-  // Pour changer la couleur de fond du body, il faut utiliser le code ci-dessous:
+  }
+}  // Pour changer la couleur de fond du body, il faut utiliser le code ci-dessous:
   // document.body.style.backgroundColor = '...';
 
 

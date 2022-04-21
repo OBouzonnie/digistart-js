@@ -23,6 +23,6 @@ console.log()
 // ------ TODO 3 ------
 // 1. Créer une fonction isBetween1000And3000 qui prend en paramètre une variable et
 // qui renvoie un booléen indiquant si la variable est un nombre compris entre 1000 et 3000.
-
+function isBetween1000And3000
 
 // 2. L'exécuter avec le paramètre de votre choix.

@@ -5,11 +5,17 @@ console.log('Vous êtes dans les exercices sur les opérateurs logiques');
 // ------ TODO 1 ------ 
 // Écrire le code pour obtenir la valeur booléenne des cas suivants:
 // 1. faux ou faux
+var a=1
+function resul(a) {
+    a>2&&a<2
+}
+console.log(resul);
+
 
 
 
 // 2. vrai et vrai
-
+boo=()
 
 
 // 3. pas faux
@@ -27,10 +33,16 @@ console.log('Vous êtes dans les exercices sur les opérateurs logiques');
 
 // ------ TODO 2 ------ 
 // 1. Créer une variable var1 qui contient un booléen (true ou false).
-
-
-
-
+b1=0
+b2=1
+var result=(b1,b2){
+    if (b1>b2) {
+        let tot=
+        console.log('b1 est sup');
+        
+    }else{
+        console.log('b1 est inf');
+    }
 // 2. Créer une variable var2 qui contient la valeur inverse de var1 (opérateur PAS).
 
 
