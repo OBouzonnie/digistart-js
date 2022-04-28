@@ -48,25 +48,35 @@ var prenoms = ['Ali', 'Nour', 'Jean', 'Carole', 'Ibrahim', 'Alma'];
 // À l'aide d'une boucle for, afficher dans la console des messages
 // qui saluent chaque prénom contenus dans le tableau `prenoms`.
 // Par exemple : "Bonjour Joseph".
-for (var i = 0; i < prenoms.length; i++) {
-  console.log('Bonjour ' + prenoms[i]);
+console.log('TODO 6')
+for(let i = 0; i < prenoms.length ; i++){
+  console.log(`Bonjour ${prenoms[i]}`)
 }
 
 // TODO: ÉTAPE 7
 // Avec une autre boucle for, afficher dans la console uniquement
 // le premier prénom contenant plus de 4 lettres.
-for (var i = 0; i < prenoms.length; i++) {
+console.log('TODO 7')
+for(let i = 0; i < prenoms.length; i++){
   if (prenoms[i].length > 4) {
     console.log(prenoms[i]);
     break;
-  }
+  };
 }
-/*
+
+
 // TODO: ÉTAPE 8
 // Avec une autre boucle for, construire une nouvelle chaîne de
 // caractères (string) qui contiendra tous les prénoms séparés par
 // une virgule. Afficher cette nouvelle chaîne de caractères dans
 // la console.
+let everyone = '';
+for(let i = 0; i < prenoms.length; i++){
+  everyone += prenoms[i];
+  if(i != (prenoms.length -1)) everyone += ', '
+}
+console.log(everyone);
+
 
 var a = [12, 47, 5, 450, 98, 100, 54, 2, 87, 9999];
 var b = [3, 76, 1002, 31, 9, 340, 420, 90, -12, 1];
@@ -75,6 +85,13 @@ var b = [3, 76, 1002, 31, 9, 340, 420, 90, -12, 1];
 // À l'aide d'une boucle for, parcourir les deux tableaux `a` et `b`,
 // et pour chaque indice, placer la valeur la plus petite dans un
 // nouveau tableau.
+console.log('TODO 9')
+var result = [];
+for(let i = 0; i < a.length; i++){
+  var r = a[i] < b[i] ? a[i] : b[i];
+  result.push(r);
+}
+console.log(result);
 
 // TODO: ÉTAPE 10
 // Avec une autre boucle for, additionner les valeurs de `a` ayant un
@@ -82,3 +99,12 @@ var b = [3, 76, 1002, 31, 9, 340, 420, 90, -12, 1];
 // Placer ces résultats d'addition dans un nouveau tableau à afficher
 // dans la console.
 // Par exemple: a[0] + b[1], a[2] + b[3], etc.*/
+var result = [];
+console.log('TODO 10')
+for (let i = 0; i < a.length; i++){
+  if(i % 2 === 0){
+    var r = a[i] + b[i+1];
+    result.push(r);
+  }
+}
+console.log(result)
