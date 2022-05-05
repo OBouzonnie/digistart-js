@@ -4,17 +4,22 @@
 
 // Merci d'écrire vos lignes de code dans l'espace en dessous de chaque consigne.
 
+
+
 function go() {
   // ---TODO--- 1
   // La page que nous voulons cacher a l'id "landing-page".
   // Ecrivez ci-dessous le code pour ajouter le style "display: none" à cet élément.
+  const landingPage = document.getElementById('landing-page');
+  landingPage.style.display = 'none';
 
   
 
   // ---TODO--- 2
   // Celle que nous voulons afficher a l'id "game-page"
   // Ecrivez ci-dessous le code pour ajouter le style "display: flex" à cet élément.
-
+  const gamePage = document.getElementById('game-page');
+  gamePage.style.display = 'flex';
 
   
 
@@ -24,9 +29,8 @@ function go() {
   // à l'élément ayant l'id "bipbip".
   // Cela permettra à bipbip de traverser l'écran avant que
   // les coyottes ne commencent à le poursuivre.
-
-
-
+  const bipbip = document.getElementById('bipbip');
+  bipbip.classList.add('animation');
 }
 
 
