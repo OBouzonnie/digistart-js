@@ -38,7 +38,7 @@ function go() {
 // Ajouter un "écouteur d'évènement" au document.
 // L'évènement écouté est `keydown`, et la fonction exécutée est
 // celle que nous nous allons créer juste après.
-
+document.addEventListener('keydown', onKeyDown);
 
 
 
@@ -53,7 +53,8 @@ function onKeyDown(event) {
   // ---TODO--- 5-A
   // Je commence par créer 2 variables `redCoyote` et
   // `yellowCoyote` qui vont récupérer les deux personnages.
-  
+  var redCoyote = document.getElementById('red');
+  var yellowCoyote = document.getElementById('yellow');
 
 
 
@@ -74,24 +75,29 @@ function onKeyDown(event) {
   // alors j'assigne la propriété "left" de "redCoyote" à leftRed + 10px.
 
   // Sinon, si le keyCode de mon event vaut 90,
-  // alors j'assigne la propriété "left" de "redCoyote" à leftRed + 10px.
+  // alors j'assigne la propriété "left" de "yellowCoyote" à leftYellow + 10px.
   
-
-
-
+  var keyCode = event.keyCode;
+  if(keyCode === 39) {
+    var leftRedPosition = parseInt(leftRed.substring(0, leftRed.length - 2));
+    var newLeftPosition = leftRedPosition + 10;
+    redCoyote.style.left = newLeftPosition + "px";
+  } else if(keyCode === 90) {
+    yellowCoyote.style.left = "calc(" + leftYellow + " + 10px)";
+  }
 
   // ---TODO--- 5-C
   // Traduire ici ce pseudo code :
 
   // Si la valeur `left` du redCoyote (nous avons créé plus
   // haut la variable `leftRed`) est supérieure à la largeur de la fenêtre,
-  // alors une alerte d'affiche avec le texte `Coyote rouge gagne !`
+  // alors une alerte s'affiche avec le texte `Coyote rouge gagne !`
 
   // Sinon, si la valeur `left` du yellowCoyote (nous avons créé plus
   // haut la variable `leftYellow`) est supérieure à la largeur de la fenêtre,
   // alors une alerte d'affiche avec le texte `Coyote jaune gagne !`
   
-
+  var windowWidth = window.innerWidth;
 
 
 }
